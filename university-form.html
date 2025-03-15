@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+        body {
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            background-color: #17152F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .form-container {
+            background: #17152F;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px whitesmoke;
+            width: 400px;
+        }
+        .form-container h2 {
+            color: #c8b6ff;
+            text-align: center;
+        }
+        label {
+            color: #fffbfb;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #course option{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #fffcf2;
+            color: #403d39;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #c8b6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>University Registration</h2>
+        <form>
+            <label for="name">University Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="pincode">Pin Code</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="website">Official Website</label>
+            <input type="url" id="website" name="website" required>
+
+            <label for="regNumber">Registration Number</label>
+            <input type="text" id="regNumber" name="regNumber" required>
+
+            <label for="course">Course Allotted</label>
+            <select id="course" name="course">
+                <option value="#">select</option>
+                <option value="bba">BBA</option>
+                <option value="mba">MBA</option>
+                <option value="bcom">B.Com</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="diploma">Diploma</option>
+                <option value="btech">B.Tech</option>
+                <option value="mtech">M.Tech</option>
+            </select>
+
+            <label for="idCard">Student ID Card Issued</label>
+            <select id="idCard" name="idCard">
+                <option value="#">select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="library">Library Access Granted</label>
+            <select id="library" name="library">
+                <option value="#">select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="scholarship">Scholarship</label>
+            <select id="scholarship" name="scholarship">
+                <option value="#">select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
